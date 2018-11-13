@@ -13,6 +13,7 @@ const Login = (props) => {
       <div>
       <input type="text" name="username" placeholder="Username" />
       </div>
+      <br></br>
       <input type="submit" value="Login"/>
       </form>;
       </div>

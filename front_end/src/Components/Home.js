@@ -118,7 +118,7 @@ class Home extends React.Component {
   render(){
     return(
       <Container>
-        {!this.state.selectedGame ?
+        {!this.state.selectedGame && !this.state.newGame ?
           <div>
             <Header as='h1'>Welcome back, {this.state.userID ?
               this.state.currentUser.name

@@ -16,10 +16,11 @@
 
 }
 
-.ui.form input {
+.ui.form.field input {
   height: 60px;
   font-size: 50px;
   line-height: 50px;
+  background-color: pink;
 }
 
 h1.ui.header {
@@ -189,7 +190,25 @@ div.card-img {
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
+  /* padding-right: 5px; */
+  background-image: url(./golden_bruno.png);
+  background-size: cover;
   background-color: rgb(125,204,169);
+  /* background-color: rgb(125,204,169); */
+
+}
+
+.App-header input{
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.App-header input[type="submit"]{
+  background-color: pink;
+  padding: 10px;
+  border-radius: 15px;
+
+
 }
 
 div.flipped-img img {
