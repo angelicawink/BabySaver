@@ -1,0 +1,328 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: pink;
+}
+
+.new-game{
+  max-width: 300px;
+
+}
+
+.ui.form input {
+  height: 60px;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+h1.ui.header {
+  color: pink;
+  /* font-size: 40px; */
+}
+
+ui.form{
+  max-width: 300px;
+
+}
+
+div.ui.header{
+  color: rgb(86,115,198);
+}
+
+#welcome-sub{
+  color: pink;
+}
+
+#card-group{
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+#new-game{
+  margin-top: 60px;
+  margin-left: 45%;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 15px;
+  color: rgb(243,202,109);
+  font-size: 25px;
+  border-color: rgb(243,202,109);
+}
+
+.mini-grid{
+  background-color: grey;
+  height: 250px;
+  width: 200px;
+  display: inline-block;
+}
+
+div.mini-card{
+  height: 35px;
+  margin: 10px;
+  background-color: rgb(201,226,215);
+  border-radius: 5px;
+  border-color: pink;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.game-buttons {
+  width: 200px;
+}
+/*
+.timer {
+  height: 120px;
+  width: 150px;
+  border-style: solid;
+  border-color: purple;
+  background-color: pink;
+  color: purple;
+  opacity: .4;
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+  line-height: 120px;
+} */
+
+/* .game-card {
+  color: red;
+} */
+
+
+div.ui.card.game-card{
+  margin: 30px;
+  color: grey;
+  padding: 40px;
+  background-color: rgb(243,202,109);
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.ui.cards>.card>.content{
+  font-size: 18px;
+}
+
+button.ui.button{
+  background-color: white;
+}
+
+.game-card img{
+  height: 100px;
+  width: 100px;
+}
+
+body {
+  background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/299460/0779ebb4bd7ab04f7858d8d0bb91f0de3ef2c958.jpg");
+  background-size: cover;
+  color: pink;
+  justify-content: center;
+  /* border-style: solid;
+  border-width: 50px;
+  border-color: pink; */
+}
+
+.me {
+  max-height: 400px;
+  max-width: 550px;
+  display: inline-block;
+}
+
+.memory-card {
+  background-color: rgb(190, 63, 84);
+  margin: 10px;
+  height: 120px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card-img {
+  height: 90%;
+  margin-top: 5px;
+  width: 97%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: pink;
+}
+
+.flipped-img img {
+  height: 95%;
+  width: 95%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: pink;
+}
+
+.baby-cage-div {
+/* margin-top: 60px; */
+height: 450px;
+width: 500px;
+position: absolute;
+top: 50%;
+/* right: 20%; */
+/* bottom: 60%; */
+/* z-index: -3; */
+}
+
+img.in-cage {
+  position: absolute;
+  max-height: 350px;
+  max-width: 330px;
+  height: 90%;
+  width: 90%;
+  bottom: 55%;
+  right: 45%;
+  /* left: 1%; */
+  /* z-index: -5; */
+}
+
+img.cage{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  right: 40%;
+  bottom: 50%;
+}
+
+/*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.baby-shelf-div {
+margin: 20px;
+height: 330px;
+width: 180px;
+border-radius: 30px;
+position: fixed;
+left: 75%;
+bottom: 60%;
+}
+
+img.on-shelf {
+  position: relative;
+  height: 30%;
+  width: 45%;
+  top: 40%;
+  left: 25%;
+}
+
+img.shelf{
+  position: relative;
+  height: 120%;
+  width: 150%
+}
+
+.baby-label {
+  position: fixed;
+}
+
+.game {
+  text-align: center;
+}
+
+.game-over {
+  position: fixed;
+}
+
+.start-game {
+  width: 550px;
+  height: 600px;
+  border-style: solid;
+  border-width: medium;
+  border-color: violet;
+  opacity: 0.8;
+  background-color: white;
+  color: purple;
+  font-size: 150px;
+  line-height: 200px;
+  display: inline-block;
+  position: absolute;
+  right: 550px;
+  top: 20%;
+  margin-top: 30px;
+}
+
+.grid {
+  display: inline-block;
+}
+
+.thumbnail{
+  text-align: center;
+}
+
+.board-game {
+  margin-top: 60px;
+  text-align: center;
+  display: inline-block;
+  width: 550px;
+  height: 600px;
+  float: right;
+  display: inline-block;
+  position: absolute;
+  right: 500px;
+  top: 20%;
+}
+
+/* .centered-content{
+  text-align: center;
+  right: 200px;
+} */
+
+#timer {
+  width: 240px;
+  height: 130px;
+  line-height: 130px;
+  font-size: 80px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: purple;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+.thank-you{
+  font-size: 50px;
+  color: black;
+  background-color: green;
+  height: 500px;
+  width: 200px;
+  line-height: 70px;
+
+}
+
+#pause-game {
+  top: 10%;
+  right: 730px;
+  font-size: 30px;
+  background-color: transparent;
+  border-color: rgb(201,226,215);
+  border-style: solid;
+  border-width: 2px;
+  color: rgb(201,226,215);
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+}
+
+#exit-button{
+  font-size: 30px;
+    background-color: transparent;
+    border-color: rgb(201,226,215);
+    border-style: solid;
+    border-width: 2px;
+  color: rgb(201,226,215);
+  border-radius: 20px;
+  padding: 10px;
+  top: 80%;
+  left: 100px;
+  position: absolute;
+}
