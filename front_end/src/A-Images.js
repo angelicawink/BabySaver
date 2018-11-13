@@ -1,5 +1,5 @@
 const array1 = [
-  {num: '1', src:'http://www.onlineworldofwrestling.com/pictures/j/johncena/31.jpg'},
+{num: '1', src:'http://www.onlineworldofwrestling.com/pictures/j/johncena/31.jpg'},
 {num:'2', src:'https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5a53cafb652dea3aedeb17a4/1515440895941/?format=2500w'},
 {num:'3', src:'https://pbs.twimg.com/media/Cs93y4HWYAA6hs_.jpg'},
 {num:'4', src:'https://i.ytimg.com/vi/_AD28H21Snw/maxresdefault.jpg'},

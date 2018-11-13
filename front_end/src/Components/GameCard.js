@@ -17,7 +17,8 @@ class GameCard extends React.Component{
         <Card.Content className="game-card">
           <Thumbnail className="thumbnail" game={this.props.game}/>
         </Card.Content>
-        <Card.Content className="game-card">Pairs Unmatched: {this.props.game.card_pairs_left}</Card.Content>
+        <Card.Content className="game-card">Unmatched : {this.props.game.card_pairs_left *2}</Card.Content>
+
         <Button onClick={this.props.selectGame} data-id={this.props.id}>Resume</Button>
       </Card>
     )

@@ -68,20 +68,24 @@ componentDidMount(){
 
 startGame = () => {
   if (this.state.seconds_left > 0){
+
     this.setState({
       timerIsOn: !this.state.timerIsOn
     }, () => this.startTimer())
   }
   else {
+
     return
   }
 }
 
 startTimer = () => {
   if (this.state.timerIsOn) {
+
     this.countDown()
   }
     else {
+
       clearInterval(this.state.timer)
     }
   }
@@ -89,9 +93,15 @@ startTimer = () => {
   countDown = () => {
     this.setState({
       timer: setInterval(() => {
-         this.setState({
-           seconds_left: this.state.seconds_left -1
-         })
+        if(this.state.seconds_left > 0 && this.state.pairsLeft > 0){
+
+          this.setState({
+            seconds_left: this.state.seconds_left -1
+          })
+        } else {
+
+          clearInterval(this.state.timer)
+        }
        }, 1000)
     })
   }
@@ -102,8 +112,10 @@ handleFlip = (e) => {
 
   let id = e.currentTarget.dataset.id;
   let flippedCards = this.state.flippedCards
-
-  if (flippedCards.includes(id)) {
+  if (flippedCards.length === 2){
+    return
+  }
+  else if (flippedCards.includes(id)) {
     return
   }
    else {
@@ -174,14 +186,14 @@ exitGame = () => {
             handleFlip={this.handleFlip}
             flippedCards={this.state.flippedCards}
             matchedCards={this.state.matchedCards}/>
-        {!this.state.timerIsOn
+          {!this.state.timerIsOn && (this.state.pairsLeft !== 0 && this.state.seconds_left !== 0)
            ?
           <StartGame startGame={this.startGame}/>
           :
           <button id="pause-game" onClick={this.startGame}>Pause Game</button>
         }
         </div>
-        <button id="exit-button" onClick={this.exitGame}>Exit Game.</button>
+        <button id="exit-button" onClick={this.exitGame}>save + exit </button>
         <Cage onShelf={this.state.onShelf}/>
         <Shelf onShelf={this.state.onShelf}/>
         {this.state.baby ?
@@ -198,7 +210,12 @@ exitGame = () => {
         null
       }
       {this.state.pairsLeft === 0 ?
-        <div className="thank-you">"thank you for our freedom"</div>
+        <div className="thank-you">thank you for our freedom</div>
+        :
+        null
+      }
+      {this.state.seconds_left === 0 ?
+        <div className="disappointing">thank you for the letdown</div>
         :
         null
       }

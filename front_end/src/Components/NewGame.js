@@ -17,10 +17,17 @@ class NewGame extends React.Component{
           </Form.Field>
 
           <Form.Field>
-            <input type="text" placeholder="number of card pairs"></input>
+            <label>Friends and family would describe me as a:</label>
+            <select>
+              <option value="hero">hero</option>
+              <option value="noob">noob</option>
+              <option value="coward">coward</option>
+              <option value="bish">bish</option>
+            </select>
           </Form.Field>
 
           <Form.Field>
+            <label>Baby to imprison:</label>
             <select>
               <option value="Bruno">Bruno</option>
               <option value="Ann">Ann</option>

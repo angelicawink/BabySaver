@@ -65,11 +65,28 @@ class Home extends React.Component {
   }
 
   handleSubmit = (e) => {
-
     let userID = this.state.userID
     let newName = e.currentTarget[0].value;
     let secondsLeft = parseInt(e.currentTarget[1].value)
-    let cardPairs = parseInt(e.currentTarget[2].value)
+    let difficulty = e.currentTarget[2].value
+    var cardPairs;
+
+    switch (difficulty){
+      case "hero":
+        cardPairs = 8;
+        break;
+      case "noob":
+        cardPairs = 6;
+        break;
+      case "coward":
+        cardPairs = 4;
+        break;
+      case "bish":
+        cardPairs = 2;
+        break;
+    }
+
+    debugger
     let babyName = e.currentTarget[3].value
 
     let baby = this.state.babies.find(baby => baby.name === babyName)
@@ -101,15 +118,26 @@ class Home extends React.Component {
   render(){
     return(
       <Container>
-        <div>
-          <Header as='h1'>HOME
-            <Header id="welcome-sub" sub>
-              Welcome Back {this.state.userID ?
-                this.state.currentUser.name
-                : null}
-                </Header>
-          </Header>
-        </div>
+        {!this.state.selectedGame ?
+          <div>
+            <Header as='h1'>Welcome back, {this.state.userID ?
+              this.state.currentUser.name
+              : null}
+            </Header>
+            <div className="memo">
+                <br></br>
+                Suffering has ensued in your absence.
+                <br></br>
+                Don't forget it.
+            </div>
+            <div className="memo-heart">
+              <img src="https://openclipart.org/image/2400px/svg_to_png/234835/heart-outline.png"/>
+            </div>
+          </div>
+           :
+           null
+        }
+
         <br></br>
         <br></br>
         {this.state.newGame ?

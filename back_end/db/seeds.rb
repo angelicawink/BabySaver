@@ -20,9 +20,9 @@ Baby.create(name: "Angelica", img_url: "https://cdn.pixabay.com/photo/2014/04/03
 Baby.create(name: "Sasha", img_url: "https://png2.kisspng.com/20180217/hce/kisspng-cartoon-infant-drawing-clip-art-cute-cartoon-baby-baby-5a8903ec64e896.7206837915189288764133.png", onShelf: false)
 Baby.create(name: "Juliette", img_url: "http://www.freelogovectors.net/wp-content/uploads/2018/03/baby-cartoon-characters003.png", onShelf: false)
 
-Game.create(seconds_left: 25, card_pairs_left: 8, user_id: 1, baby_id: 1, name: "DOMINATION")
-Game.create(seconds_left: 36, card_pairs_left: 8, user_id: 1, baby_id: 2, name: "Know UR Worth")
-Game.create(seconds_left: 42, card_pairs_left: 8, user_id: 1, baby_id: 3, name: "Listen UPPP")
+Game.create(seconds_left: 60, card_pairs_left: 8, user_id: 1, baby_id: 1, name: "DOMINATION")
+Game.create(seconds_left: 60, card_pairs_left: 2, user_id: 1, baby_id: 2, name: "Know UR Worth")
+Game.create(seconds_left: 60, card_pairs_left: 3, user_id: 1, baby_id: 3, name: "Listen UPPP")
 
 Game.create(seconds_left: 50, card_pairs_left: 8, user_id: 2, baby_id: 4, name: "Touchem Up")
 Game.create(seconds_left: 40, card_pairs_left: 8, user_id: 2, baby_id: 5, name: "Snifff IT Nice")
