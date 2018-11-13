@@ -89,7 +89,22 @@ div.ui.header{
   color: white;
 }
 
+.ui.form .field>label{
+  font-size: 25px;
+  line-height: 26px;
+  /* color: rgb(125,204,169); */
+  color: pink;
+}
 
+.ui.form{
+  font-size: 20px;
+}
+
+/* .ui.form input[type=text], .ui.form input[type="submit"]{
+  background-color: rgb(125,204,169);
+  color: white;
+
+} */
 
 #mini-grid-container{}
 
