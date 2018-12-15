@@ -120,7 +120,7 @@ class Home extends React.Component {
       <Container>
         {!this.state.selectedGame && !this.state.newGame ?
           <div>
-            <Header as='h1'>Welcome back, {this.state.userID ?
+            <Header as='h1' id="welcome-back">Welcome back, {this.state.userID ?
               this.state.currentUser.name
               : null}
             </Header>
@@ -128,7 +128,9 @@ class Home extends React.Component {
                 <br></br>
                 Suffering has ensued in your absence.
                 <br></br>
-                Don't forget it.
+              Don't forget
+                <br></br>
+              it.
             </div>
             <div className="memo-heart">
               <img src="https://openclipart.org/image/2400px/svg_to_png/234835/heart-outline.png"/>
@@ -141,7 +143,7 @@ class Home extends React.Component {
         <br></br>
         <br></br>
         {this.state.newGame ?
-          <NewGame handleSubmit={this.handleSubmit}/>
+          <NewGame handleSubmit={this.handleSubmit} toggleNewGame={this.handleNewGameClick}/>
           :
           (!this.state.selectedGame ?
             (<div>

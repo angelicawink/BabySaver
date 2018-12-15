@@ -11,9 +11,31 @@
   color: pink;
 }
 
-.new-game{
-  max-width: 300px;
+*{
+  outline: none;
+}
 
+div.new-game{
+  max-width: 300px;
+  background-color: lightpink;
+  padding: 40px;
+  border-radius: 8px;
+  min-width: 40vw;
+  /* width: fit-content; */
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  /* min-height: 70vh; */
+  text-align: center;
+  /* top: 30%; */
+  /* display: block; */
+  /* color: white; */
+
+}
+
+.new-game-label{
+  color: white !important;
+  /* font-size: 20px; */
 }
 
 .ui.form.field input {
@@ -33,28 +55,43 @@ h1.ui.header {
 }
 
 div.memo{
-  color: rgb(125,204,169);
+  color: rgb(222, 58, 109);
+  text-shadow: .5px .5px black;
+  text-align: center;
+  /* color: purple; */
+  font-weight: bold;
   position: absolute;
-  right: 80%;
-  top: 40%;
+  right: 83%;
+  top: 42.5%;
   font-size: 30px;
-  max-width: 250px;
+  max-width: 240px;
   max-height: 300px;
   font-style: italic;
   line-height: 40px;
 }
 
+
+
 div.memo-heart img{
   position: absolute;
-  right: 79%;
-  top: 35%;
-  max-width: 360px;
-  height: 400px;
+  right: 82.5%;
+  top: 36%;
+  max-width: 260px;
+  height: 450px;
 }
 
 ui.form{
   max-width: 300px;
 
+}
+
+#welcome-back{
+  /* color: rgb(222, 58, 109); */
+  color: lightpink;
+  font-size: 3.9em;
+  text-shadow: 4px 4px rgb(222, 58, 109);
+  top: 13%;
+  /* font-weight: bold; */
 }
 
 div.ui.header{
@@ -70,15 +107,22 @@ div.ui.header{
   margin-top: 10%;
 }
 
-#new-game{
+button#submit-new-game.ui.button, button#cancel-new-game.ui.button{
+  color: rgb(222, 58, 109);
+}
+
+#new-game, #exit-button{
   margin-top: 60px;
   margin-left: 45%;
-  background-color: transparent;
+  background-color: rgba(245, 245, 245, .6);
+  border-width: 4px;
   border-radius: 5px;
   padding: 15px;
-  color: rgb(243,202,109);
+  font-weight: bold;
+  color: rgb(222, 58, 109);
   font-size: 25px;
-  border-color: rgb(243,202,109);
+  border-color: rgb(222, 58, 109) !important;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .mini-grid{
@@ -90,7 +134,7 @@ div.ui.header{
 }
 
 .ui.form .field>label{
-  font-size: 25px;
+  font-size: 20px;
   line-height: 26px;
   /* color: rgb(125,204,169); */
   color: pink;
@@ -175,7 +219,8 @@ button.ui.button{
 }
 
 body {
-  background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/299460/0779ebb4bd7ab04f7858d8d0bb91f0de3ef2c958.jpg");
+  /* background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/299460/0779ebb4bd7ab04f7858d8d0bb91f0de3ef2c958.jpg"); */
+  background-image: url("https://images.onlinelabels.com/images/clip-art/Clue/Clue_Simple_Clouds.png");
   background-size: cover;
   color: pink;
   justify-content: center;
@@ -206,7 +251,7 @@ div.card-img {
   border-style: solid;
   border-width: 1px;
   /* padding-right: 5px; */
-  background-image: url(./golden_bruno.png);
+  /* background-image: url(./golden_bruno.png); */
   background-size: cover;
   background-color: rgb(125,204,169);
   /* background-color: rgb(125,204,169); */
@@ -248,23 +293,23 @@ top: 50%;
 
 img.in-cage {
   position: absolute;
-  max-height: 350px;
-  max-width: 330px;
+  max-height: 200px;
+  max-width: 180px;
   height: 90%;
   width: 90%;
-  bottom: 55%;
-  right: 45%;
+  bottom: 50%;
+  right: 64%;
   /* left: 1%; */
   /* z-index: -5; */
 }
 
 img.cage{
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 110%;
+  width: 120%;
   z-index: 10;
-  right: 40%;
-  bottom: 50%;
+  right: 32%;
+  bottom: 44%;
 }
 
 /*  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -309,11 +354,12 @@ img.shelf{
   max-width: 550px;
   height: 600px;
   border-style: solid;
-  border-width: medium;
-  border-color: violet;
+  border-width: 15px;
+  border-radius: 5px;
+  border-color: rgb(222, 58, 109);
   opacity: 0.8;
   background-color: white;
-  color: purple;
+  color: rgb(222, 58, 109);
   font-size: 100px;
   line-height: 180px;
   display: inline-block;
@@ -323,9 +369,26 @@ img.shelf{
   margin-top: 30px;
 }
 
+.ui.form input[type=text], .ui.form input[type=text]:focus, .ui.form input[type=text]::placeholder, .ui.form select{
+  background-color: rgb(222, 58, 109);
+  padding: 10px;
+  color: lightpink;
+}
+
+/* button#submit-new-game.ui.button{
+  border-color: red !important;
+  border-style: solid;
+  border-width: 3px;
+  background-color:
+} */
+
 .grid {
   display: inline-block;
+  /* left: 50%; */
+}
 
+div.ui.grid.cards{
+  /* margin-left: 250px !important; */
 }
 
 .thumbnail{
@@ -350,21 +413,33 @@ img.shelf{
   right: 400px;
 }
 
-
+#timer-container{
+  min-width: 230px;
+  max-width: 230px;
+  max-height: 130px;
+  min-height: 130px;
+  padding-bottom: 20px;
+}
 
 div#timer {
   width: 240px;
   height: 130px;
   line-height: 130px;
-  font-size: 80px;
+  /* color: red; */
+  text-shadow: 4px 4px rgb(222, 58, 109);
+  font-size: 70px;
+  font-family: sans-serif !important;
   border-style: solid;
   border-width: 3px;
-  border-color: white;
-  background-color: transparent;
+  border-color: rgb(222, 58, 109);
+  background-color: lightpink !important;
   border-radius: 30px;
-  padding-bottom: 10px;
-  left: 300px;
+  text-align: center;
+  /* padding-bottom: 30px !important; */
+  /* top: 10px; */
+  left: 500px;
   position: absolute;
+  color: white;
 }
 
 /* .thank-you{
@@ -378,29 +453,51 @@ div#timer {
 } */
 
 #pause-game {
-  top: 10%;
+  top: 19%;
   right: 720px;
   font-size: 30px;
+  background-color: rgba(245, 245, 245, .6);
+  border-color: rgb(222, 58, 109);
+  border-style: solid;
+  border-width: 2px;
+  color: rgb(222, 58, 109);
+  border-radius: 20px;
+  padding: 6px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+#pause-game:hover{
+  background-color: rgba(25, 48, 134, .5);
+  color: white;
+}
+
+#exit-button{
+  /* font-size: 30px;
   background-color: transparent;
   border-color: rgb(201,226,215);
   border-style: solid;
   border-width: 2px;
   color: rgb(201,226,215);
-  border-radius: 20px;
+  border-radius: 20px; */
   padding: 10px;
+  top: 85%;
+  width: fit-content !important;
+  right: 745px;
   position: absolute;
 }
 
-#exit-button{
-  font-size: 30px;
-    background-color: transparent;
-    border-color: rgb(201,226,215);
-    border-style: solid;
-    border-width: 2px;
-  color: rgb(201,226,215);
-  border-radius: 20px;
-  padding: 10px;
-  top: 90%;
-  right: 745px;
-  position: absolute;
+button#submit-new-game.ui.button:hover, button#cancel-new-game.ui.button:hover{
+  background-color: rgba(25, 48, 134, .5);
+  color: white;
+}
+
+#new-game:hover, #exit-button:hover{
+  background-color: rgba(25, 48, 134, .6);
+  /* color: rgb(243,202,109); */
+  color: white;
+}
+
+*{
+  font-family: 'Nanum Gothic', sans-serif;
 }

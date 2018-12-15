@@ -9,13 +9,13 @@ const Login = (props) => {
   } else {
     return (
       <div className="App">
-      <form onSubmit={props.handleLogin} className="App-header">
-      <div>
-      <input type="text" name="username" placeholder="Username" />
-      </div>
-      <br></br>
-      <input type="submit" value="Login"/>
-      </form>;
+        <form onSubmit={props.handleLogin} className="App-header">
+          <div>
+          <input type="text" name="username" placeholder="Username" />
+          </div>
+          <br></br>
+          <input type="submit" value="Login"/>
+        </form>;
       </div>
     )
   }

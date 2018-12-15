@@ -14,7 +14,7 @@ class BoardGame extends React.Component {
     return(
       <div>
         <div className="board-game">
-                <Grid className="grid">
+                <Grid className="grid cards">
                   {this.props.cards
                     ?
                     this.props.cards.map(card =>

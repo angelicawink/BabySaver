@@ -17,7 +17,8 @@ class NewGame extends React.Component{
           </Form.Field>
 
           <Form.Field>
-            <label>Friends and family would describe me as a:</label>
+            
+            <label className="new-game-label">Friends and family would describe me as a:</label>
             <select>
               <option value="hero">hero</option>
               <option value="noob">noob</option>
@@ -27,7 +28,7 @@ class NewGame extends React.Component{
           </Form.Field>
 
           <Form.Field>
-            <label>Baby to imprison:</label>
+            <label className="new-game-label">Baby to imprison:</label>
             <select>
               <option value="Bruno">Bruno</option>
               <option value="Ann">Ann</option>
@@ -42,7 +43,9 @@ class NewGame extends React.Component{
             </select>
           </Form.Field>
 
-          <Button type="submit">Submit</Button>
+          <Button id="cancel-new-game" onClick={this.toggleNewGame}>Cancel</Button>
+          <Button id="submit-new-game" type="submit">Submit</Button>
+
         </Form>
       </div>
     )
